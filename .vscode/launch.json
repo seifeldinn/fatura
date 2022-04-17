@@ -1,0 +1,63 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+  
+  
+  
+
+
+  
+      {
+          "name": "Upgrade",
+          "type": "python",
+          "request": "launch",
+          "module": "flask",
+          "env": { "FLASK_APP": "manage.py", "FLASK_ENV": "development" },
+          "args": ["db", "upgrade"],
+          "jinja": true
+        },
+        {
+          "name": "database INIT",
+          "type": "python",
+          "request": "launch",
+          "module": "flask",
+          "env": { "FLASK_APP": "manage.py", "FLASK_ENV": "development" },
+          "args": ["db", "init"],
+          "jinja": true
+        },{
+          "name": "Stamp Head",
+          "type": "python",
+          "request": "launch",
+          "module": "flask",
+          "env": { "FLASK_APP": "manage.py", "FLASK_ENV": "development" },
+          "args": ["db", "stamp", "head"],
+          "jinja": true
+        },
+    {
+      "name": "Migrate",
+      "type": "python",
+      "request": "launch",
+      "module": "flask",
+      "env": { "FLASK_APP": "manage.py", "FLASK_ENV": "development" },
+      "args": ["db", "migrate"],
+      "jinja": true
+    },
+    {
+      "name": "RUN RUN RUN RUN RUN RUN RUN ",
+      "type": "python",
+      "request": "launch",
+      "module": "flask",
+      "env": {
+        "FLASK_APP": "manage.py",
+        "FLASK_ENV": "development",
+        "FLASK_RUN_PORT": "5500",
+        "FLASK_DEBUG": "1"
+      },
+      "args": ["run", "--no-debugger"],
+      "jinja": true
+    }
+  ]
+}

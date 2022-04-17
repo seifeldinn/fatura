@@ -1,0 +1,17 @@
+flask
+flask-sqlalchemy
+flask-restx
+flask-migrate
+flask-bcrypt
+flask-cors
+Flask-MonitoringDashboard
+flask-socketio
+flask-jwt-extended
+flask-marshmallow
+marshmallow-sqlalchemy
+PyMySQL
+flask-rbac
+flask-pymongo 
+flask_paginate
+pymongo
+python-dateutil
