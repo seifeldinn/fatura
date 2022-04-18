@@ -22,7 +22,7 @@ class DevelopmentConfig(Config):
     DEBUG = True
     
     SQLALCHEMY_DATABASE_URI = 'sqlite:///flask_monitoringdashboard.db'
-    # MONGO_URI = "mongodb://root:admin@mongo/accessLog?authSource=admin"  
+    # MONGO_URI = ""  
   
     API_KEY = 'c8f06001-bf5a-46b3-afd75f-f5677769fc6c'
 
@@ -43,15 +43,15 @@ class TestingConfig(Config):
 
 class ProductionConfig(Config):
     DEBUG = False
-    # SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:admin@db/new_giza_club'
+    # MONGO_URI = ""
     # MONGO_URI = "mongodb://root:admin@mongo/accessLog?authSource=admin"  
     SQLALCHEMY_DATABASE_URI = 'sqlite:////flask_monitoringdashboard.db'
-    MONGO_URI = "mongodb://root:admin@207.38.88.71:27017/accessLog?authSource=admin"    
+    # MONGO_URI = ""    
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     
     # SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:admin@db/new_giza_club'
-    # MONGO_URI = "mongodb://root:admin@mongo/accessLog?authSource=admin"    
+    # MONGO_URI = ""    
     API_KEY = 'c8f06001-bf5a-46b3-afd75f-f5677769fc6c'
 
 
